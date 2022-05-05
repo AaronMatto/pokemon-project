@@ -22,7 +22,7 @@ Please install the following technologies to run the app:
   -  Ruby, version 2.7.4 and up
   -  Rails, version 6.0.4.8 and up
   -  React, version 18.1.0 and up
-  -  Node, version 14.15.5
+  -  Node, version 14.15.5 and up
 
 
 Running the app:
