@@ -32,6 +32,8 @@ Running the app:
   -  Run 'npm start' in the directory of 'pokemon-react', then press 'y' if prompted to launch the server on another port
   -  Search away!
 
+Testing:
+
 
 Improvements:
   - The error message should display to the user quicker when the search term does not find a pokemon.
