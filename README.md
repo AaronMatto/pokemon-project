@@ -11,7 +11,7 @@ Overview:
  -  The front end then uses the information in the returned JSON and presents it to the user, showing them the name, picture and translated description of
     the relevant pokemon.
  -  If the user searches for a pokemon that does not exist, they will see a message with their search term displayed to them informing them to check for spelling errors.
- -  It is worth noting that the back ends' functionality could be entirely encorporated into the front end, so this application doesn't necessarily require a back end; 
+ -  It is worth noting that the back ends' functionality could be entirely encorporated into the front end, so this application doesn't necessarily require a back end, 
     which was built for practise.
  -  Also, the fun translations API only accepts 5 requests per hour, so it is only possible to search for 5 pokemon per hour as a result.
  -  Finally, there are no Pokemon that include a whitespace in their name, so the front end does not require functionality for search terms including a space. 
