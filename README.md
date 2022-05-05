@@ -17,7 +17,7 @@ Overview:
  -  Finally, there are no Pokemon that include a whitespace in their name, so the front end does not require functionality for search terms including a space. 
 
 
-Please install the following technologies to run the app:
+Please install the following technologies to run the app and see tests:
   -  VS code
   -  Ruby, version 2.7.4 and up
   -  Rails, version 6.0.4.8 and up
