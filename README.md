@@ -6,7 +6,7 @@ Overview:
  -  The back end hosts a server as a rails application which is sent requests via the front end, which hosts a react application.
  -  In the front end, the search term (pokemon) entered by the user is obtained and sent as a request to the back end.
  -  The back end works by sending requests to two different APIs; first the pokeAPI, to retrieve the description and image, and second the 
-    Shakespear fun translations API to translate the acquired description. Upon completing this process, the back end acts as an API itself by building
+    Shakespeare fun translations API to translate the acquired description. Upon completing this process, the back end acts as an API itself by building
     a JSON object with this information which is sent back to the front end.
  -  The front end then uses the information in the returned JSON and presents it to the user, showing them the name, picture and translated description of
     the relevant pokemon.
