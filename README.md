@@ -37,4 +37,6 @@ Testing:
 
 Improvements:
   - The error message should display to the user quicker when the search term does not find a pokemon.
-  - Improved styling
+  - The rails application should display the json object it is outputting. It does this in a test file currently and not in the file that actually
+    receives the request from the front end, as this file is expecting a HTML template due to the way I currently know of setting up a rails app.
+  - Improved styling.
