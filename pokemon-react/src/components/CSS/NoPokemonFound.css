@@ -1,0 +1,9 @@
+#not-found-msg {
+  color: white;
+  font-size: 40px;
+  margin-left: 100px;
+  width: 60%;
+  /* font-family: 'Russo One', sans-serif; */
+  font-family: 'Noto Sans', sans-serif;
+  /* font-family: 'Fira Sans', sans-serif; */
+}
