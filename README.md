@@ -48,4 +48,4 @@ Improvements:
     receives the request from the front end, as this file is expecting a HTML template due to the way I currently know of setting up a rails app.
   - Improved styling (although I'm not a designer 😅)
   - Better tests. Currently, the test for the search bar (SearchBar.test.js) tests that the correct data is returned from the back end (so tests the back       end by proxy) however there is
-    likely a far better way of implementing such a test. The biggest challenge was overcoming forbidden permission to access the backend for the tests.
+    likely a far better way of implementing such a test. Implementing the tests in the react app is currently the biggest challenge.
