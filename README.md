@@ -47,5 +47,4 @@ Improvements:
   - The rails application should display the json object it is outputting. It does this in a test file currently and not in the file that actually
     receives the request from the front end, as this file is expecting a HTML template due to the way I currently know of setting up a rails app.
   - Improved styling (although I'm not a designer 😅)
-  - Better tests. Currently, the test for the search bar (SearchBar.test.js) tests that the correct data is returned from the back end (so tests the back       end by proxy) however there is
-    likely a far better way of implementing such a test. Implementing the tests in the react app is currently the biggest challenge.
+  - Better tests. Currently, the test for the search bar (SearchBar.test.js) tests that the correct data is returned from the back end (so tests the back       end by proxy) however the test isn't working properly at the moment. Not currently sure how to make the test simulate user input on components e.g. the     search bar. Implementing the tests in the react app has been the biggest challenge.
