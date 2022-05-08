@@ -39,7 +39,7 @@ Running the app:
 
 Testing:
  - To run the tests in the react app run 'npm run test' in the 'pokemon-react' directory on terminal
- - In theory the tests here also test the backend by proxy as they are testing what is returned and rendered into the front end. The tests can only pass if    the backend retruns the correct information and the front end renders it properly.
+ - The tests here are meant to test the backend by proxy as they are testing what is returned and rendered into the front end for given search terms. The      tests would only pass if the backend retruns the correct information and the front end renders it properly.
 
 
 Improvements:
