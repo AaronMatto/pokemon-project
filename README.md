@@ -32,8 +32,7 @@ Running the app:
   -  Run 'npm install' in the directory of 'pokemon-react' on terminal
   -  Run 'npm start' in the directory of 'pokemon-react', then press 'y' if prompted to launch the server on another port
   -  Ensure the node server is running on port 3001 else the api request from the react app to the backend will be blocked by CORS
-  -  Alternatively, if the react app launches on a different port you can go into the rails app in 'pokemon-api'. In the app go into initializers/cors.rb
-  -  Change the value of "origins" to be the localhost from which your react app is launching
+  -  Alternatively, if the react app launches on a different port you can go into the rails app in 'pokemon-api'. In the app go into initializers/cors.rb.      Change the value of "origins" to be the localhost from which your react app is launching
   -  Search away!
 
 
