@@ -47,3 +47,4 @@ Improvements:
     receives the request from the front end, as this file is expecting a HTML template due to the way I currently know of setting up a rails app.
   - Improved styling (although I'm not a designer 😅)
   - Better tests. Currently, the test for the search bar (SearchBar.test.js) tests that the correct data is returned from the back end (so tests the back       end by proxy) however the test isn't working properly at the moment. Not currently sure how to make the test simulate user input on components e.g. the     search bar. Implementing the tests in the react app has been the biggest challenge.
+  - If it is not possible for the react test files to directly test the backend API, a test in rspec should be written to ensure the correct object is         built in the backend. This is already manually tested in localhost/3000/test/insert_pokemon_name
