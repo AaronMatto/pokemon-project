@@ -32,14 +32,13 @@ Running the app:
   -  Run 'npm install' in the directory of 'pokemon-react' on terminal
   -  Run 'npm start' in the directory of 'pokemon-react', then press 'y' if prompted to launch the server on another port
   -  Ensure the node server is running on port 3001 else the api request from the react app to the backend will be blocked by CORS
-  -  Alternatively, if the react app launches on a different port you can go into the rails app in 'pokemon-api'. In the app go into initializers/cors.rb
-  -  Change the value of "origins" to be the localhost from which your react app is launching
+  -  Alternatively, if the react app launches on a different port you can go into the rails app in 'pokemon-api'. In the app go into initializers/cors.rb.      Change the value of "origins" to be the localhost from which your react app is launching
   -  Search away!
 
 
 Testing:
  - To run the tests in the react app run 'npm run test' in the 'pokemon-react' directory on terminal
- - In theory the tests here also test the backend by proxy as they are testing what is returned and rendered into the front end. The tests can only pass if    the backend retruns the correct information and the front end renders it properly.
+ - The tests here are meant to test the backend by proxy as they are testing what is returned and rendered into the front end for given search terms. The      tests would only pass if the backend retruns the correct information and the front end renders it properly.
 
 
 Improvements:
@@ -47,5 +46,7 @@ Improvements:
   - The rails application should display the json object it is outputting. It does this in a test file currently and not in the file that actually
     receives the request from the front end, as this file is expecting a HTML template due to the way I currently know of setting up a rails app.
   - Improved styling (although I'm not a designer 😅)
-  - Better tests. Currently, the test for the search bar (SearchBar.test.js) tests that the correct data is returned from the back end (so tests the back       end by proxy) however there is
-    likely a far better way of implementing such a test. Implementing the tests in the react app is currently the biggest challenge.
+  - Better tests. Currently, the test for the search bar (SearchBar.test.js) tests that the correct data is returned from the back end (so tests the back       end by proxy) however the test isn't working properly at the moment. Not currently sure how to make the test simulate user input on components e.g. the     search bar. Implementing the tests in the react app has been the biggest challenge.
+  - If it is not possible for the react test files to directly test the backend API, a test in rspec should be written to ensure the correct object is         built in the backend. This is already manually tested in localhost/3000/test/insert_pokemon_name. The rspec tests are currently in progress and can 
+    be found in the pokemon-api directory in app/spec/pokemon_controller_spec.rb. The tests can be run by running 'rake' in the terminal in the pokemon-api
+    directory after rails s has been executed (as server needs to be running to check what our api returns).
