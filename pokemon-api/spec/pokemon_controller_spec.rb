@@ -8,7 +8,7 @@ pokemon_controller = PokemonController.new
 
 describe "PokemonController" do
   it '`PokemonController` class should be defined' do
-    expect(pokemon_controller.defined?).to eq(true)
+    expect(pokemon_controller).to be_an_instance_of(PokemonController)
   end
 
   it '#pokemon-api should build the correct object with correct data' do
