@@ -19,7 +19,9 @@ describe "PokemonController" do
     name = pokemon_json['message']['name']
     description = pokemon_json['message']['description']
     # expect(pokemon_controller.pokemon_api.pokemon_object.name).to eq "charizard"
-    expect(description).to eq "Charizard flies 'round the sky in search of powerful opponents. 't breathes fire of such most wondro... yond 't melts aught. However,  't nev'r turns its fiery breath on any opponent weaker than itself."
+    expect(description).to eq "Charizard flies 'round the sky in search of powerful opponents.
+    't breathes fire of such most wondro... yond 't melts aught. However, 't nev'r turns its fiery breath on any opponent
+    weaker than itself."
     expect(sprite).to eq 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png'
   end
 end
