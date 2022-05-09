@@ -50,3 +50,4 @@ Improvements:
   - If it is not possible for the react test files to directly test the backend API, a test in rspec should be written to ensure the correct object is         built in the backend. This is already manually tested in localhost/3000/test/insert_pokemon_name. The rspec tests are currently in progress and can 
     be found in the pokemon-api directory in app/spec/pokemon_controller_spec.rb. The tests can be run by running 'rake' in the terminal in the pokemon-api
     directory after rails s has been executed (as server needs to be running to check what our api returns).
+  - The test fails currently at comparing expected description for charizard but it seems to be a small and tedious string formatting error as the expected string and receieved string in the terminal are identical. 
