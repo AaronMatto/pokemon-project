@@ -8,6 +8,6 @@ function App() {
 }
 
 
-// npm start must not be on localhost3000!
+// npm start must not be on localhost3000 (aka the rails server)!
 
 export default App;

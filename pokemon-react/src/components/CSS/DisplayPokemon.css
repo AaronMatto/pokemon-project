@@ -48,16 +48,15 @@
   .pokemon-desc-container {
     max-width: 800px;
     position: relative;
-    bottom: 100px;
+    bottom: 135px;
   }
 
   #pokemon-image {
     position: relative;
-    right: 80px;
+    /* right: 80px; */
     bottom: 80px;
   }
 }
-
 
 .flex-desc {
   /* border: 2px solid green; */

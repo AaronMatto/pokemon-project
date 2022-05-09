@@ -40,6 +40,3 @@ class PokemonController < ApplicationController
                         sprite: find_pokemon_sprite(@name) }
   end
 end
-
-
-# exception: "#<URI::InvalidURIError: URI must be ascii only \"https://api.funtranslations.com/translate/shakespeare.json?text=GOLDEEN is a very beautiful POKeMON\\nwith fins that billow elegantly in water.\\nHowever, don\\u2019t let your guard down\\faround this POKeMON  it could ram you\\npowerfully with its horn.\">"

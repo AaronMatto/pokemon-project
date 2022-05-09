@@ -1,7 +1,10 @@
+// import getDataTest from '../testing'
 import { render, cleanup } from '@testing-library/react'
 import  SearchBar, { getData } from '../SearchBar';
-import { rest } from 'msw';
+import { rest } from 'msw'; // tried to use mock to mock the server response
 import { setupServer } from 'msw/node';
+
+
 
 const response = rest.get('http://localhost:3000/pokemon/charizard', (req, res, ctx) => {
   return res(ctx.json(
@@ -12,11 +15,11 @@ const response = rest.get('http://localhost:3000/pokemon/charizard', (req, res, 
    sprite: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png" } }
    ));
 })
-// why is const response needed? If lines 3 to 18 are commented out then the test cannot access
-// localhost and it fails. response is not explicitly used in the test function, however
-// it is what is compared to charizard on lines 38-40.
-const server = new setupServer(response);
+// // why is const response needed? If lines 4 to 17 are commented out then the test cannot access
+// // localhost (if we remove line 1 comment) and it fails. response is not explicitly used in the test function, however
+// // it is what is compared to charizard on lines 44-46. getData returns const response it seems from the tests?
 
+const server = new setupServer(response);
 beforeAll(() => server.listen());
 afterEach(() => server.resetHandlers());
 afterAll(() => server.close());
