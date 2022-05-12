@@ -51,3 +51,4 @@ Improvements:
     be found in the pokemon-api directory in app/spec/pokemon_controller_spec.rb. The tests can be run by running 'rake' in the terminal in the pokemon-api
     directory after rails s has been executed (as server needs to be running to check what our api returns).
   - The test fails currently at comparing expected description for charizard but it seems to be a small and tedious string formatting error as the expected string and receieved string in the terminal are identical. I have decided to make a new branch on the project to fix this error.
+  - For some reason, the pokeball tab icon only loads when the react app is launced on port 3000 and not 3001 :(
