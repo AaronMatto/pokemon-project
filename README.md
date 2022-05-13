@@ -1,6 +1,6 @@
 # Pokemon-API-Project
 
-Overview:
+## Overview:
  -  A project to build a basic API that acts as a simple search engine for Pokemon, allowing users to see their picture and a description translated into
     Shakespearean English.
  -  The back end hosts a server as a rails application which is sent requests via the front end, which hosts a react application.
@@ -17,31 +17,29 @@ Overview:
  -  Finally, there are no Pokemon that include a whitespace in their name, so the front end does not require functionality for search terms including a space. 
 
 
-Please install the following technologies to run the app and see tests:
-  -  VS code
-  -  Ruby, version 2.7.4 and up
-  -  Rails, version 6.0.4.8 and up
-  -  React, version 18.1.0 and up
-  -  Node, version 14.15.5 and up
+## Running the app:
 
+To run the rails app:
 
-Running the app:
-  -  Run 'bundle install' from the command line in the directory of 'pokemon-api' on the terminal
-  -  Run 'rails s' in the directory of 'pokemon-api' on terminal
-  -  Ensure the rails server is running on port 3000 as the front end is expecting to request 'http://localhost:3000/pokemon/SearchedPokemon'
-  -  Run 'npm install' in the directory of 'pokemon-react' on terminal
-  -  Run 'npm start' in the directory of 'pokemon-react', then press 'y' if prompted to launch the server on another port
-  -  Ensure the node server is running on port 3001 else the api request from the react app to the backend will be blocked by CORS
-  -  Alternatively, if the react app launches on a different port you can go into the rails app in 'pokemon-api'. In the app go into initializers/cors.rb.      Change the value of "origins" to be the localhost from which your react app is launching
-  -  Search away!
+```
+cd pokemon-api
+docker build -t po-api .
+docker run -p 3000:3000 po-api
+```
 
+To run the react app:
+```
+cd pokemon-react
+docker build -t po-re .
+docker run -p 3001:3000 po-re
+```
 
-Testing:
+## Testing:
  - To run the tests in the react app run 'npm run test' in the 'pokemon-react' directory on terminal
- - The tests here are meant to test the backend by proxy as they are testing what is returned and rendered into the front end for given search terms. The      tests would only pass if the backend retruns the correct information and the front end renders it properly.
+ - The tests here are meant to test the backend by proxy as they are testing what is returned and rendered into the front end for given search terms. The tests would only pass if the backend retruns the correct information and the front end renders it properly.
 
 
-Improvements:
+## Improvements:
   - The error message should display to the user quicker when the search term does not find a pokemon.
   - The rails application should display the json object it is outputting. It does this in a test file currently and not in the file that actually
     receives the request from the front end, as this file is expecting a HTML template due to the way I currently know of setting up a rails app.
